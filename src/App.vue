@@ -22,7 +22,7 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style >
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -35,5 +35,15 @@ export default {
 }
 html {
   min-width: 400px;
+}
+a:visited {
+  color: rgba(0, 0, 0, 0.87);
+}
+a {
+  color: rgba(128, 122, 122, 0.87);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 </style>

@@ -8,7 +8,7 @@
       />
     </v-col>
     <v-col cols="12" sm="8" md="6" class="body__inputContainer">
-      <Search />
+      <Search :showButtons="true" />
     </v-col>
   </v-container>
 </template>

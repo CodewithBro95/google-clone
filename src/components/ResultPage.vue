@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="__header mt-5">
+    <div class="__header">
       <div class="pl-10 pr-10 mt-2">
         <div class="__image_container">
           <router-link to="/">
@@ -170,7 +170,7 @@ export default {
   top: 0px;
   z-index: 1;
   background-color: #fff;
-  padding-top: 20px;
+  padding-top: 14px;
 }
 .__actual_result .__display_link {
   text-decoration: none;

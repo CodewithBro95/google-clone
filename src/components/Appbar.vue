@@ -18,12 +18,14 @@
   position: fixed;
   left: 85%; /* for it to be responsive */
   top: 15px;
-  z-index: 5;
+  z-index: 2;
 }
 /* Remove the headerRight for smaller screens */
 @media all and (max-width: 1024px) {
   .headerRight {
-    display: none;
+    /* display: none; */
+    position: static;
+    float: right;
   }
 }
 .menu-item {

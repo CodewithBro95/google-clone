@@ -22,7 +22,7 @@
       </div>
     </span>
     <span v-else>
-      <div class="__search">
+      <div class="__search withOutButtons">
         <v-text-field
           v-model="searchTerm"
           append-icon="mdi-microphone"
@@ -107,6 +107,12 @@ a:hover {
   text-decoration: none;
 }
 .__search {
-  min-width: 200px;
+  max-width: 100%;
+}
+/* Remove the headerRight for smaller screens */
+@media all and (max-width: 1024px) {
+  .__search.withOutButtons {
+    max-width: 65%;
+  }
 }
 </style>

@@ -16,17 +16,9 @@
   font-size: 13px;
   color: rgba(0, 0, 0, 0.87);
   position: fixed;
-  left: 85%; /* for it to be responsive */
+  right: 0; /* for it to be responsive */
   top: 15px;
   z-index: 2;
-}
-/* Remove the headerRight for smaller screens */
-@media all and (max-width: 1024px) {
-  .headerRight {
-    /* display: none; */
-    position: static;
-    float: right;
-  }
 }
 .menu-item {
   padding-top: 7px;

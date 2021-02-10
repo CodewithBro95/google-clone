@@ -176,4 +176,7 @@ export default {
   text-decoration: none;
   color: inherit;
 }
+.__results {
+  margin-bottom: 13% !important;
+}
 </style>

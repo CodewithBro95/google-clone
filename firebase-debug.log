@@ -1,0 +1,33 @@
+[debug] [2021-02-10T12:48:12.832Z] ----------------------------------------------------------------------
+[debug] [2021-02-10T12:48:12.836Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user.DESKTOP-OMQ89VA\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-02-10T12:48:12.836Z] CLI Version:   8.13.1
+[debug] [2021-02-10T12:48:12.837Z] Platform:      win32
+[debug] [2021-02-10T12:48:12.837Z] Node Version:  v14.15.4
+[debug] [2021-02-10T12:48:12.838Z] Time:          Wed Feb 10 2021 13:48:12 GMT+0100 (West Africa Standard Time)
+[debug] [2021-02-10T12:48:12.838Z] ----------------------------------------------------------------------
+[debug] [2021-02-10T12:48:12.839Z] 
+[debug] [2021-02-10T12:48:12.859Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-10T12:48:12.861Z] > authorizing via signed-in user
+[debug] [2021-02-10T12:48:12.862Z] [iam] checking project clone-vue-fe8c3 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-02-10T12:48:12.870Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-vue-fe8c3:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-02-10T12:48:15.100Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 10 Feb 2021 12:48:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=569","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-10T12:48:15.103Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/clone-vue-fe8c3  
+ 
+[debug] [2021-02-10T12:48:36.266Z] Server Error. connect ETIMEDOUT 142.250.74.234:443
+[debug] [2021-02-10T12:48:38.037Z] FirebaseError: Server Error. connect ETIMEDOUT 142.250.74.234:443
+    at Request._callback (C:\Users\user.DESKTOP-OMQ89VA\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\user.DESKTOP-OMQ89VA\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:467:12)
+    at Request.onRequestError (C:\Users\user.DESKTOP-OMQ89VA\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:327:22)
+    at ClientRequest.EventEmitter.emit (domain.js:467:12)
+    at TLSSocket.socketErrorListener (_http_client.js:469:9)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at emitErrorNT (internal/streams/destroy.js:106:8)
+    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[error] 
+[error] Error: Failed to get Firebase project clone-vue-fe8c3. Please make sure the project exists and your account has permission to access it.

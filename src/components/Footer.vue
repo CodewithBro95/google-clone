@@ -26,11 +26,13 @@
 </template>
 <style scoped>
 .__footer {
-  margin-top: 115px;
   color: #5f6368;
   font-size: 14.5px;
   background: #f2f2f2;
   border-top: 1px solid #d2d2d2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .__links_right {
   padding-left: 10px;

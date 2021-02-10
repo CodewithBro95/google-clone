@@ -1,7 +1,7 @@
 <template>
   <div class="headerRight">
-    <router-link class="menu-item _menu _link" to="/gmail">Gmail</router-link>
-    <router-link class="menu-item _menu _link" to="/images">Images</router-link>
+    <router-link class="menu-item _menu _link" to="/">Gmail</router-link>
+    <router-link class="menu-item _menu _link" to="/">Images</router-link>
     <div class="menu-item _menu">
       <v-icon color="blue-grey darken-2"> mdi-apps </v-icon>
     </div>
@@ -13,10 +13,18 @@
 <style scoped>
 .headerRight {
   display: flex;
-  float: right;
   font-size: 13px;
   color: rgba(0, 0, 0, 0.87);
-  margin-right: 20px;
+  position: fixed;
+  left: 85%; /* for it to be responsive */
+  top: 15px;
+  z-index: 5;
+}
+/* Remove the headerRight for smaller screens */
+@media all and (max-width: 1024px) {
+  .headerRight {
+    display: none;
+  }
 }
 .menu-item {
   padding-top: 7px;

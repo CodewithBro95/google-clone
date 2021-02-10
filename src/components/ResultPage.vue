@@ -170,6 +170,7 @@ export default {
   top: 0px;
   z-index: 1;
   background-color: #fff;
+  padding-top: 20px;
 }
 .__actual_result .__display_link {
   text-decoration: none;
